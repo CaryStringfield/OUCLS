@@ -85,8 +85,7 @@
                     android:typeface="normal"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    tools:targetApi="jelly_bean_mr1"
-                    android:textAlignment="center" />
+                    tools:targetApi="jelly_bean_mr1" />
                 <TextView
                     android:layout_width="90dip"
                     android:layout_height="wrap_content"
@@ -94,7 +93,6 @@
                     android:id="@+id/textVClsAdvisor"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
-                    android:textAlignment="center"
                     android:typeface="normal"
                     android:textSize="16sp"
                     android:textStyle="bold"
@@ -105,7 +103,6 @@
                     android:text="@string/canvas2"
                     android:id="@+id/textVCanvas"
                     android:layout_marginLeft="20dp"
-                    android:textAlignment="center"
                     android:typeface="normal"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -135,7 +132,7 @@
                 android:layout_width="90dip"
                 android:layout_height="90dip"
                 android:id="@+id/imageButClsRecources"
-                android:background="@drawable/law_buttons_canvas_res"
+                android:background="@drawable/cls_resources"
                 android:contentDescription="@string/clsadvisor"
                 android:layout_gravity="center_vertical"
 
@@ -170,7 +167,6 @@
                 android:id="@+id/textVWriting"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="20dp"
-                android:textAlignment="center"
                 android:typeface="normal"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -181,7 +177,6 @@
                 android:id="@+id/textVRecources"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:textAlignment="center"
                 android:typeface="normal"
                 android:textSize="16sp"
                 android:singleLine="false"
@@ -192,7 +187,6 @@
                 android:text="@string/blog"
                 android:id="@+id/textVBlog"
                 android:layout_marginLeft="20dp"
-                android:textAlignment="center"
                 android:typeface="normal"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -253,7 +247,6 @@
                 android:id="@+id/textVTBA"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="20dp"
-                android:textAlignment="center"
                 android:typeface="normal"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -264,7 +257,6 @@
                 android:id="@+id/textVFAQ"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:textAlignment="center"
                 android:typeface="normal"
                 android:textSize="16sp"
                 android:singleLine="false"
@@ -275,7 +267,6 @@
                 android:text="@string/help"
                 android:id="@+id/textVHelp"
                 android:layout_marginLeft="20dp"
-                android:textAlignment="center"
                 android:typeface="normal"
                 android:textSize="16sp"
                 android:textStyle="bold" />
