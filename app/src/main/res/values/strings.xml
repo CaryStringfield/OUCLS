@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">OUCLS</string>
+    <string name="banner">banner</string>
+    <string name="canvas">canvas</string>
+    <string name="clsadvisor">clsAdvisor</string>
+    <string name="clsweb">clsWeb</string>
+    <string name="cls_website">Cls Website</string>
+    <string name="cls_advisor">Cls Advisor</string>
+    <string name="canvas2">Canvas</string>
+    <string name="writing_center">Writing Center</string>
+    <string name="resource_center">Resource Center</string>
+    <string name="faq">FAQ</string>
+    <string name="blog">Blog</string>
+    <string name="help">Help</string>
+</resources>

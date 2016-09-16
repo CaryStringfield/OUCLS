@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cary.oucls.MainActivity"
+    android:id="@+id/MainLayout">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/IVBanner"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/ouclsbannerk"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/banner" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/IVBanner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/LinLay"
+        android:layout_alignParentRight="false">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Buttons1">
+
+                <ImageButton
+                    android:layout_width="90dip"
+                    android:layout_height="90dip"
+                    android:id="@+id/imageButClsWeb"
+                    android:background="@drawable/canvas_icons_canvas"
+                    android:contentDescription="@string/clsweb"
+                    android:layout_gravity="top|left"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp" />
+                <ImageButton
+                    android:layout_width="90dip"
+                    android:layout_height="90dip"
+                    android:id="@+id/imageButClsAdvisor"
+                    android:background="@drawable/canvas_icons_advisors"
+                    android:contentDescription="@string/clsadvisor"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <ImageButton
+                    android:layout_width="90dip"
+                    android:layout_height="90dip"
+                    android:id="@+id/imageButCanvas"
+                    android:background="@drawable/canvas_icons_faculty"
+                    android:contentDescription="@string/canvas"
+                    android:layout_gravity="top|right"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/Text1">
+
+                <TextView
+                    android:layout_width="90dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cls_website"
+                    android:id="@+id/textVClsWeb"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:textAlignment="center"
+                    android:typeface="normal"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="90dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cls_advisor"
+                    android:id="@+id/textVClsAdvisor"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textAlignment="center"
+                    android:typeface="normal"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="90dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/canvas2"
+                    android:id="@+id/textVCanvas"
+                    android:layout_marginLeft="20dp"
+                    android:textAlignment="center"
+                    android:typeface="normal"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Buttons3"
+            android:layout_marginTop="15dp">
+
+            <ImageButton
+                android:layout_width="90dip"
+                android:layout_height="90dip"
+                android:id="@+id/imageButWriting"
+                android:background="@drawable/canvas_icons_writing"
+                android:contentDescription="@string/clsweb"
+                android:layout_gravity="top|left"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp" />
+            <ImageButton
+                android:layout_width="90dip"
+                android:layout_height="90dip"
+                android:id="@+id/imageButClsRecources"
+                android:background="@drawable/law_buttons_canvas_res"
+                android:contentDescription="@string/clsadvisor"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"/>
+            <ImageButton
+                android:layout_width="90dip"
+                android:layout_height="90dip"
+                android:id="@+id/imageButBlog"
+                android:background="@drawable/cls_blog"
+                android:contentDescription="@string/canvas"
+                android:layout_gravity="top|right"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Text3">
+
+            <TextView
+                android:layout_width="90dip"
+                android:layout_height="wrap_content"
+                android:text="@string/writing_center"
+                android:id="@+id/textVWriting"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="20dp"
+                android:textAlignment="center"
+                android:typeface="normal"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="90dip"
+                android:layout_height="wrap_content"
+                android:text="@string/resource_center"
+                android:id="@+id/textVRecources"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textAlignment="center"
+                android:typeface="normal"
+                android:textSize="16sp"
+                android:singleLine="false"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="90dip"
+                android:layout_height="wrap_content"
+                android:text="@string/blog"
+                android:id="@+id/textVBlog"
+                android:layout_marginLeft="20dp"
+                android:textAlignment="center"
+                android:typeface="normal"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Buttons2"
+            android:layout_marginTop="15dp">
+
+            <ImageButton
+                android:layout_width="90dip"
+                android:layout_height="90dip"
+                android:id="@+id/imageButTBA"
+                android:background="@drawable/canvas_icons_canvas"
+                android:contentDescription="@string/clsweb"
+                android:layout_gravity="top|left"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp" />
+            <ImageButton
+                android:layout_width="90dip"
+                android:layout_height="90dip"
+                android:id="@+id/imageButFAQ"
+                android:background="@drawable/law_buttons_faq"
+                android:contentDescription="@string/clsadvisor"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"/>
+            <ImageButton
+                android:layout_width="90dip"
+                android:layout_height="90dip"
+                android:id="@+id/imageButHelp"
+                android:background="@drawable/law_buttons_help"
+                android:contentDescription="@string/canvas"
+                android:layout_gravity="top|right"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Text2">
+
+            <TextView
+                android:layout_width="90dip"
+                android:layout_height="wrap_content"
+                android:text="@string/faq"
+                android:id="@+id/textVTBA"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="20dp"
+                android:textAlignment="center"
+                android:typeface="normal"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="90dip"
+                android:layout_height="wrap_content"
+                android:text="@string/faq"
+                android:id="@+id/textVFAQ"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textAlignment="center"
+                android:typeface="normal"
+                android:textSize="16sp"
+                android:singleLine="false"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="90dip"
+                android:layout_height="wrap_content"
+                android:text="@string/help"
+                android:id="@+id/textVHelp"
+                android:layout_marginLeft="20dp"
+                android:textAlignment="center"
+                android:typeface="normal"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
