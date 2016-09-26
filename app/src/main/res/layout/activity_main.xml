@@ -202,8 +202,8 @@
             <ImageButton
                 android:layout_width="90dip"
                 android:layout_height="90dip"
-                android:id="@+id/imageButTBA"
-                android:background="@drawable/canvas_icons_canvas"
+                android:id="@+id/imageButLibrary"
+                android:background="@drawable/law_buttons_law_library"
                 android:contentDescription="@string/clsweb"
                 android:layout_gravity="top|left"
                 android:layout_marginLeft="15dp"
@@ -243,13 +243,13 @@
             <TextView
                 android:layout_width="90dip"
                 android:layout_height="wrap_content"
-                android:text="@string/faq"
-                android:id="@+id/textVTBA"
+                android:text="@string/library"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="20dp"
                 android:typeface="normal"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:id="@+id/textVLibrary" />
             <TextView
                 android:layout_width="90dip"
                 android:layout_height="wrap_content"

@@ -14,7 +14,7 @@ public class MainActivity extends android.app.Activity {
     private ImageButton clsWriting;
     private ImageButton clsResource;
     private ImageButton clsBlog;
-    //private ImageButton clsWeb;
+    private ImageButton clsLibrary;
     private ImageButton clsFAQ;
     private ImageButton clsHelp;
 
@@ -22,7 +22,6 @@ public class MainActivity extends android.app.Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //this.requestWindowFeature(android.view.Window.FEATURE_NO_TITLE);
 
         clsWeb = (ImageButton) findViewById(R.id.imageButClsWeb);
         clsAdvisor = (ImageButton) findViewById(R.id.imageButClsAdvisor);
@@ -30,7 +29,7 @@ public class MainActivity extends android.app.Activity {
         clsWriting = (ImageButton) findViewById(R.id.imageButWriting);
         clsResource = (ImageButton) findViewById(R.id.imageButClsRecources);
         clsBlog = (ImageButton) findViewById(R.id.imageButBlog);
-        //clsWeb = (ImageButton) findViewById(R.id.imageButTBA);
+        clsLibrary = (ImageButton) findViewById(R.id.imageButLibrary);
         clsFAQ = (ImageButton) findViewById(R.id.imageButFAQ);
         clsHelp = (ImageButton) findViewById(R.id.imageButHelp);
 
@@ -50,13 +49,6 @@ public class MainActivity extends android.app.Activity {
             }
         }  );
 
-        clsAdvisor.setOnClickListener(new android.view.View.OnClickListener() {
-            public void onClick(View v) {
-                Uri uri = Uri.parse("http://www.ou.edu/content/cls/contact_cls/advisors.html");
-                Intent intent = new Intent(Intent.ACTION_VIEW,uri);
-                startActivity(intent);
-            }
-        }  );
 
         clsCanvas.setOnClickListener(new android.view.View.OnClickListener() {
             public void onClick(View v) {
@@ -76,23 +68,31 @@ public class MainActivity extends android.app.Activity {
 
         clsResource.setOnClickListener(new android.view.View.OnClickListener() {
             public void onClick(View v) {
-                Uri uri = Uri.parse("https://guides.ou.edu/cls");
+                Uri uri = Uri.parse("http://cols.ou.edu/canvas/studentresources");
                 Intent intent = new Intent(Intent.ACTION_VIEW,uri);
                 startActivity(intent);
             }
         }  );
 
-     /*   clsAdvisor.setOnClickListener(new android.view.View.OnClickListener() {
+        clsBlog.setOnClickListener(new android.view.View.OnClickListener() {
             public void onClick(View v) {
-                Uri uri = Uri.parse("http://www.ou.edu/content/cls/contact_cls/advisors.html");
+                Uri uri = Uri.parse("http://clsblog.ou.edu");
                 Intent intent = new Intent(Intent.ACTION_VIEW,uri);
                 startActivity(intent);
             }
-        }  );*/
+        }  );
+
+        clsLibrary.setOnClickListener(new android.view.View.OnClickListener() {
+            public void onClick(View v) {
+                Uri uri = Uri.parse("http://guides.ou.edu/cls");
+                Intent intent = new Intent(Intent.ACTION_VIEW,uri);
+                startActivity(intent);
+            }
+        }  );
 
         clsFAQ.setOnClickListener(new android.view.View.OnClickListener() {
             public void onClick(View v) {
-                Uri uri = Uri.parse("https://cols.ou.edu/helpdesk/students/");
+                Uri uri = Uri.parse("http://cols.ou.edu/canvas/faq/student.html");
                 Intent intent = new Intent(Intent.ACTION_VIEW,uri);
                 startActivity(intent);
             }
